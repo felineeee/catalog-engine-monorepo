@@ -1,10 +1,10 @@
 {
-  "name": "catalog-engine",
+  "name": "catalog-engine-pos",
   "private": true,
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "build": "tsc",
-    "db:generate": "kysely-codegen --out-file src/db/types.ts"
+    "db:generate": "kysely-codegen --out-file src/db/types.ts --dialect=postgres"
   },
   "dependencies": {
     "@catalog-engine/server": "*",
