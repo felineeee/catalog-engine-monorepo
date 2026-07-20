@@ -1,0 +1,21 @@
+{
+  "name": "catalog-engine",
+  "private": true,
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "db:generate": "kysely-codegen --out-file src/db/types.ts"
+  },
+  "dependencies": {
+    "@catalog-engine/server": "*",
+    "@catalog-engine/database": "*",
+    "@catalog-engine/cache": "*",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "@catalog-engine/tsconfig": "*",
+    "kysely-codegen": "^0.11.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.2.2"
+  }
+}

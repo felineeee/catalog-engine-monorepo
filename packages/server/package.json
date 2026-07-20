@@ -1,0 +1,17 @@
+{
+  "name": "@catalog-engine/server",
+  "private": true,
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "dependencies": {
+    "fastify": "^4.24.3",
+    "@fastify/type-provider-typebox": "^3.5.0",
+    "@sinclair/typebox": "^0.31.28",
+    "@fastify/rate-limit": "^9.0.0",
+    "pino-pretty": "^10.2.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@catalog-engine/tsconfig": "*"
+  }
+}
