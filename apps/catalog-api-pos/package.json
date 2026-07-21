@@ -1,19 +1,26 @@
 {
   "name": "catalog-engine-pos",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "build": "tsc",
-    "db:generate": "kysely-codegen --out-file src/db/types.ts --dialect=postgres"
+    "start": "node dist/server.js",
+    "db:migrate": "tsx src/db/migrate.ts",
+    "db:generate": "kysely-codegen --out-file src/db/types.ts --dialect=postgres",
+    "db:seed": "tsx src/db/seed.ts"
   },
   "dependencies": {
-    "@catalog-engine/server": "*",
-    "@catalog-engine/database": "*",
     "@catalog-engine/cache": "*",
-    "dotenv": "^16.3.1"
+    "@catalog-engine/database": "*",
+    "@catalog-engine/server": "*",
+    "dotenv": "^16.3.1",
+    "meilisearch": "^0.59.0"
   },
   "devDependencies": {
     "@catalog-engine/tsconfig": "*",
+    "@faker-js/faker": "^10.5.0",
+    "@types/redlock": "^4.0.8",
     "kysely-codegen": "^0.11.0",
     "tsx": "^4.7.0",
     "typescript": "^5.2.2"

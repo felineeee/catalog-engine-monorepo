@@ -11,11 +11,20 @@
     "typecheck": "turbo run typecheck"
   },
   "devDependencies": {
-    "better-sqlite3": "^12.11.1",
     "kysely-codegen": "^0.20.0",
     "turbo": "^2.10.5"
   },
   "allowScripts": {
-    "esbuild@0.28.1": true
+    "esbuild@0.28.1": true,
+    "meilisearch@0.59.0": true
+  },
+  "dependencies": {
+    "@fastify/rate-limit": "^11.1.0",
+    "@fastify/swagger": "^9.8.1",
+    "@fastify/swagger-ui": "^6.1.0",
+    "fastify": "^5.10.0",
+    "ioredis": "^5.11.1",
+    "meilisearch": "^0.59.0",
+    "redlock": "^5.0.0-beta.2"
   }
 }

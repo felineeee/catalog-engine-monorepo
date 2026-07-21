@@ -1,5 +1,5 @@
 import { createDatabaseClient } from '@catalog-engine/database';
-import { DB } from './types';
+import { DB } from './types.js';
 import * as dotenv from 'dotenv';
 
 dotenv.config();

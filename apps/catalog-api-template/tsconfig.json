@@ -1,6 +1,11 @@
 {
   "extends": "@catalog-engine/tsconfig/base.json",
-  "include": ["src/**/*"],
+  "include": [
+    "src/**/*",
+    "../catalog-api-pos/src/db/migrate.ts",
+    "../catalog-api-pos/src/db/seed.ts",
+    "../catalog-api-pos/src/db/migrations"
+  ],
   "compilerOptions": {
     "ignoreDeprecations": "6.0"
   }
