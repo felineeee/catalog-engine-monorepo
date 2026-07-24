@@ -6,6 +6,8 @@
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
+    "outDir": "./dist",
+    "types": ["node", "jest"],
     "forceConsistentCasingInFileNames": true,
     "exactOptionalPropertyTypes": true,
     "noImplicitReturns": true

@@ -1,4 +1,9 @@
 {
   "extends": "@catalog-engine/tsconfig/base.json",
-  "include": ["src/**/*"]
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist"
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
 }

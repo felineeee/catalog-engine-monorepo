@@ -11,6 +11,8 @@
     "typecheck": "turbo run typecheck"
   },
   "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "jest": "^30.4.2",
     "kysely-codegen": "^0.20.0",
     "turbo": "^2.10.5"
   },
